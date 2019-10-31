@@ -38,6 +38,5 @@ class String
       end
     end
     new_sentences2.size
-    new_sentences2
   end
 end
