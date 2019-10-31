@@ -39,7 +39,7 @@ class String
     end
     new_sentences2 = []
     new_sentences.each do |value|
-      if value != ""
+      if value != "" && value != nil
         new_sentences2 << value
       end
     end
