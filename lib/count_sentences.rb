@@ -34,6 +34,15 @@ class String
     if self.include?("?")
       new_sentences << self.split("?")
     end
-    new_sentences.size
+    if self.include("!")
+      new_sentences << self.split("!")
+    end
+    new_sentences2 = []
+    new_sentences.each do |value|
+      if value != ""
+        new_sentences2 << value
+      end
+    end
+    new_sentences2.size
   end
 end
