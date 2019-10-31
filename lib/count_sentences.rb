@@ -27,15 +27,9 @@ class String
   end
 
   def count_sentences
-    new_sentences_period = []
+    new_sentences = []
     if self.include?(".")
-      new_sentences = self.split(".")
-    end
-    if self.include?("?")
-      new_sentences << self.split("?")
-    end
-    if self.include?("!")
-      new_sentences << self.split("!")
+      new_sentences = self.split(/[.!?]/)
     end
     new_sentences2 = []
     new_sentences.each do |value|
