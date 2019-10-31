@@ -27,7 +27,7 @@ class String
   end
 
   def count_sentences
-    new_sentences = []
+    new_sentences_period = []
     if self.include?(".")
       new_sentences = self.split(".")
     end
