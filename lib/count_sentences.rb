@@ -34,7 +34,7 @@ class String
     if self.include?("?")
       new_sentences << self.split("?")
     end
-    if self.include("!")
+    if self.include?("!")
       new_sentences << self.split("!")
     end
     new_sentences2 = []
